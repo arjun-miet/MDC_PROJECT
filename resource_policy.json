@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "description": "Trusted classifications for files in demo_files. Unknown or missing entries are denied.",
+  "resources": {
+    "public_guide.txt": {
+      "classification": "public",
+      "allowed_roles": [
+        "employee",
+        "hr",
+        "admin"
+      ],
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    "internal_notes.txt": {
+      "classification": "internal",
+      "allowed_roles": [
+        "employee",
+        "admin"
+      ],
+      "allowed_operations": [
+        "read",
+        "write"
+      ]
+    },
+    "restricted_payroll.txt": {
+      "classification": "restricted",
+      "allowed_roles": [
+        "hr",
+        "admin"
+      ],
+      "allowed_operations": [
+        "read"
+      ]
+    }
+  }
+}
